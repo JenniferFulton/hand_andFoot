@@ -13,31 +13,31 @@
         <h2>Round *NUMBER*</h2>
         <h4>*TEAM* vs *TEAM*</h4>
         <form action="/hf/calculate" method="POST">
-            <p>Did Your Team Go Out First?</p>
+            <p title="Team who goes out first gets 100 points">Did Your Team Go Out First?</p>
             <label for="yes">Yes</label>
             <input type="radio" id="yes" name="outFirst" value="yes">
             <label for="no">No</label>
             <input type="radio" id="no" name="outFirst" value="no">
 
-            <label for="red3s">Red 3's</label>
+            <label title="Total number of Red 3s" for="red3s">Red 3's</label>
             <input type="number" id="red3s" name="red3s">
 
-            <label for="red_canastas">Red Canastas</label>
+            <label title="7 Cards of the Same Kind" for="red_canastas">Red Canastas</label>
             <input type="number" id="red_canastas" name="red_canastas">
 
-            <label for="black_canastas">Black Canastas</label>
+            <label title="Contains up to 2 wild cards" for="black_canastas">Black Canastas</label>
             <input type="number" id="black_canastas" name="black_canastas">
 
-            <label for="wild_canastas">Wild Canastas</label>
+            <label title="All jokers and and 2's" for="wild_canastas">Wild Canastas</label>
             <input type="number" id="wild_canastas" name="wild_canastas">
 
-            <label for="7canastas">Seven Canastas</label>
+            <label title="All 7s" for="7canastas">Seven Canastas</label>
             <input type="number" id="7canastas" name="7canastas">
 
-            <label for="card_points">Card Points</label>
+            <label title="Total number of points laid down" for="card_points">Card Points</label>
             <input type="number" id="card_points" name="card_points">
 
-            <label for="penalty_points">Penalty Points</label>
+            <label title="Points of cards remaining in your hand" for="penalty_points">Penalty Points</label>
             <input type="number" id="penalty_points" name="penalty_points">
 
             <input type="submit" value="Calculate!">
